@@ -5,6 +5,7 @@ int sem1(int a[7][4]);
 int sem2(int a[7][4]);
 int sem3(int a[7][4]);
 int sem4(int a[7][4]);
+void total(int t1,int t2,int t3,int t4);
 
 int main(){
     int A[7][4],t1,t2,t3,t4;
@@ -21,6 +22,8 @@ int main(){
     cout<<"------SEMANA 4------"<<endl;
     t4=sem4(A);
     cout<<"--> "<<t4<<endl;
+    cout<<"-----VENTA TOTAL----"<<endl;
+    total(t1,t2,t3,t4);
     return 0;
 }
 int sem1(int a[7][4]){
@@ -70,4 +73,9 @@ int sem4(int a[7][4]){
         }
     }
     return s4;
+}
+void total(int t1,int t2,int t3,int t4){
+    int vt=0; 
+    vt=t1+t2+t3+t4;
+    cout<<"--> "<<vt<<endl;
 }
